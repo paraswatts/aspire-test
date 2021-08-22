@@ -18,7 +18,7 @@ const DebitCardTab = () => {
     const [isEnabled, setIsEnabled] = useState(false)
     const weeklyLimit = useSelector(state => state.user.weeklyLimit)
     const weeklyLimitAmount = useSelector(state => state.user.weeklyLimitAmount)
-    const netConnected = useSelector(state => state.user.netConnected)
+    const netConnected = useSelector(state => state.common.netConnected)
 
     useEffect(() => {
         const unsubscribe = navigation.addListener('focus', () => {
