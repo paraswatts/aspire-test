@@ -1,6 +1,6 @@
 # Aspire App
 
-A small demo to demonstrate debit card limit functionality in the aspire app
+A small demo to demonstrate debit card limit functionality in the aspire app.
 <img src="demo.png" alt="demo" width="40%"/>
 <img src="demo2.png" alt="demo2" width="40%"/>
 
@@ -9,7 +9,7 @@ A small demo to demonstrate debit card limit functionality in the aspire app
 ```
 npm install -g react-native-cli
 cd aspire
-npm install
+yarn
 react-native run-android
 ```
 
@@ -18,6 +18,9 @@ react-native run-android
 ```
 npm install -g react-native-cli
 cd aspire
-npm install
+yarn
+cd ios
+pod install
+cd ..
 react-native run-ios
 ```
