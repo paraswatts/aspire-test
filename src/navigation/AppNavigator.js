@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react';
+import React from 'react';
 import { createNativeStackNavigator } from 'react-native-screens/native-stack';
 import { NAVIGATION, _handleNotifications } from '../shared';
 import { BottomTab, WeeklyLimitScreen } from '../screens';

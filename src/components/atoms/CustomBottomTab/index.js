@@ -1,6 +1,6 @@
 import React from 'react';
 import { Text, StyleSheet, View, TouchableOpacity, SafeAreaView, Image } from 'react-native';
-import { COLORS, _scaleText, ICONS, NAVIGATION, IMAGES } from '../../../shared';
+import { COLORS, _scaleText, NAVIGATION, IMAGES } from '../../../shared';
 import { useSafeAreaInsets } from 'react-native-safe-area-context';
 
 const TABS = [

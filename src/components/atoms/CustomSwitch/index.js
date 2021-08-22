@@ -1,6 +1,6 @@
 import React from 'react';
-import { Text, StyleSheet, View, TouchableOpacity, SafeAreaView, Switch, } from 'react-native';
-import { COLORS, _scaleText, ICONS, NAVIGATION, IMAGES } from '../../../shared';
+import { StyleSheet, Switch, } from 'react-native';
+import { COLORS, _scaleText } from '../../../shared';
 
 const CustomSwitch = ({
     toggleSwitch,

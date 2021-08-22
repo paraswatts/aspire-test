@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import { ScrollView, Text, TouchableOpacity, UIManager, View, Dimensions } from 'react-native';
+import { ScrollView, Text, TouchableOpacity, UIManager, View, Dimensions, Alert } from 'react-native';
 import { CustomHeader, ScreenHOC, DebitCardRow, DebitCardUI } from '../../../../components';
 import { STRINGS, _scaleText, COLORS, CommonStyles, NAVIGATION } from '../../../../shared';
 import Octicons from 'react-native-vector-icons/Octicons'
@@ -18,19 +18,21 @@ const DebitCardTab = () => {
     const [isEnabled, setIsEnabled] = useState(false)
     const weeklyLimit = useSelector(state => state.user.weeklyLimit)
     const weeklyLimitAmount = useSelector(state => state.user.weeklyLimitAmount)
+    const netConnected = useSelector(state => state.user.netConnected)
 
     useEffect(() => {
         const unsubscribe = navigation.addListener('focus', () => {
             const payload = {
+                netConnected,
                 success: (data) => {
                     setUserData(data?.data)
                 },
-                fail: () => {
+                fail: (message) => {
+                    Alert.alert(message)
                 }
             }
             dispatch(getUserData(payload))
         });
-        // Return the function to unsubscribe from the event so it gets removed on unmount
         return unsubscribe;
 
     }, [navigation]);

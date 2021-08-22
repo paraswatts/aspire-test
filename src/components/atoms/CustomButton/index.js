@@ -1,6 +1,6 @@
 import React from 'react';
-import { Text, StyleSheet, View, TouchableOpacity, SafeAreaView, Switch, } from 'react-native';
-import { COLORS, _scaleText, ICONS, NAVIGATION, IMAGES } from '../../../shared';
+import { Text, TouchableOpacity } from 'react-native';
+import { _scaleText, } from '../../../shared';
 
 const CustomButtom = ({
     onPress,
@@ -16,10 +16,3 @@ const CustomButtom = ({
 }
 
 export default CustomButtom;
-
-const styles = StyleSheet.create({
-    switch: {
-        transform: [{ scaleX: .6 }, { scaleY: .6 }],
-        marginRight: -_scaleText(10).fontSize
-    }
-});

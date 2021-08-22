@@ -1,4 +1,4 @@
-import { FlatList, Image, View, Text, StyleSheet } from "react-native";
+import { Image, View, Text, StyleSheet } from "react-native";
 import { IMAGES, STRINGS, _scaleText, COLORS, CommonStyles } from "../../../shared";
 import React from 'react'
 import { CustomSwitch } from "../../atoms";

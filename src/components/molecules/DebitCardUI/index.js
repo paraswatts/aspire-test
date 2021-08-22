@@ -1,9 +1,7 @@
-import { FlatList, Image, View, Text, StyleSheet } from "react-native";
-import { IMAGES, STRINGS, _scaleText, COLORS, CommonStyles } from "../../../shared";
 import React from 'react'
-const mockData = { _name: 'Mark Henry', _cardNumber: '5647  3411  2413  2020', _expiry: '12/20', _cvv: '456' }
+import { Image, View, Text, StyleSheet } from "react-native";
+import { IMAGES, STRINGS, _scaleText, COLORS, CommonStyles } from "../../../shared";
 const DebitCardUI = ({ showCardDetails, userData }) => {
-    const { _name, _cardNumber, _expiry, _cvv } = mockData
     const _hiddenCard = '●●●●  ●●●●  ●●●●'
     const _hiddenCVV = "***"
     return (

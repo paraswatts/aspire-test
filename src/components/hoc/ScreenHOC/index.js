@@ -1,5 +1,5 @@
-import React, { useRef } from 'react';
-import { Text, View, SafeAreaView, StatusBar, StyleSheet, TouchableOpacity } from 'react-native';
+import React from 'react';
+import { View, SafeAreaView, StatusBar } from 'react-native';
 import { CustomHeader } from '../../../components/';
 import { COLORS, _scaleText } from '../../../shared';
 const ScreenHOC = ({

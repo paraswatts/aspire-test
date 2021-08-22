@@ -1,24 +1,15 @@
 import React from 'react';
 import { Text, StyleSheet, View, Image, Dimensions, TouchableHighlight, } from 'react-native';
-import { _scaleText, COLORS, ICONS, IMAGES } from '../../../shared';
-import { connect } from 'react-redux'
+import { _scaleText, COLORS, IMAGES } from '../../../shared';
 import MaterialIcons from 'react-native-vector-icons/MaterialIcons'
 
 const W = Dimensions.get('window').width
 
 const CustomHeader = ({
-    container,
-    left,
     onBackPress = () => { },
-    right,
     showBackIcon,
-    showBackGround = true,
     title,
-    titleStyle,
-    showMenuIcon,
-    onRightPress = () => { },
-    rightText,
-    backIcon,
+    titleStyle
 }) => {
     return (
         <View style={styles.container}>
@@ -45,19 +36,6 @@ const CustomHeader = ({
 export default CustomHeader;
 
 const styles = StyleSheet.create({
-    menuItem: {
-        flexDirection: 'row',
-        alignItems: 'center',
-        paddingVertical: _scaleText(10).fontSize,
-        borderBottomWidth: _scaleText(1).fontSize,
-        borderColor: COLORS.GREY.LIGHT,
-        width: _scaleText(200).fontSize
-    },
-    menuLabel: selected => ({
-        color: selected ? COLORS.GREY._1 : COLORS.GREY._2,
-        // marginLeft: _scaleText(8).fontSize,
-        fontSize: _scaleText(10).fontSize,
-    }),
     container: {
         flexDirection: 'row',
         alignItems: 'center',
@@ -76,11 +54,6 @@ const styles = StyleSheet.create({
         textAlign: 'center',
         fontWeight: 'bold'
     },
-    rightTitle: {
-        fontSize: _scaleText(12).fontSize,
-        color: COLORS.WHITE
-    },
-    headerRow: { flexDirection: 'row', marginTop: _scaleText(-10).fontSize, borderWidth: 0, alignItems: 'center' },
     left: {
         flex: 1,
         height: '100%',

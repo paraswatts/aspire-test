@@ -9,19 +9,24 @@ import { API, TEXT_CONST, popToTop, NAVIGATION, push, STRINGS } from "../../shar
 
 function* getUserData({
     payload: {
+        netConnected,
         success = () => { },
         fail = () => { },
     } = {},
 }) {
     try {
         yield put(startLoading());
-        const { status, data = {} } = yield getRequest({
-            API: API.USERDATA
-        });
-        if (status == 200) {
-            success(data);
+        if (netConnected) {
+            const { status, data = {} } = yield getRequest({
+                API: API.USERDATA
+            });
+            if (status == 200) {
+                success(data);
+            } else {
+                fail(data?.msg);
+            }
         } else {
-            fail(data?.msg);
+            fail(STRINGS.INTERNET_ERROR)
         }
     } catch (error) {
         fail(JSON.stringify(error));

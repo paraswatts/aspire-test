@@ -1,7 +1,7 @@
 import { useNavigation } from '@react-navigation/native';
 import React, { useState } from 'react';
 import { Text, UIManager, View, Image } from 'react-native';
-import { useDispatch, useSelector } from 'react-redux';
+import { useDispatch } from 'react-redux';
 import { CustomButton, ScreenHOC, CustomInput } from '../../components';
 import { setWeeklyLimit } from '../../redux/actions';
 import { IMAGES, STRINGS, _scaleText } from '../../shared';

@@ -1,8 +1,7 @@
 import React from 'react';
-import { Text, StyleSheet, View, TouchableOpacity, SafeAreaView, Switch, TextInput, } from 'react-native';
-import { COLORS, _scaleText, ICONS, NAVIGATION, IMAGES, STRINGS } from '../../../shared';
+import { Text, StyleSheet, View, } from 'react-native';
+import { COLORS, _scaleText, STRINGS } from '../../../shared';
 import CurrencyInput from 'react-native-currency-input';
-
 const CustomInput = ({
     onChange,
     value,

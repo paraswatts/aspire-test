@@ -1,7 +1,7 @@
 import React, { useEffect } from 'react';
 import { NavigationContainer } from '@react-navigation/native';
 import { AppNavigator } from './AppNavigator';
-import { useDispatch, useSelector } from 'react-redux';
+import { useDispatch } from 'react-redux';
 import NetInfo from "@react-native-community/netinfo";
 import { updateInternetStatus } from '../redux/actions';
 
