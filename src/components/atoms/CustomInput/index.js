@@ -46,10 +46,11 @@ const styles = StyleSheet.create({
         flexDirection: 'row',
         paddingVertical: _scaleText(10).fontSize,
         borderBottomWidth: 0.5,
-        borderColor: COLORS.GREY.A7
+        borderColor: COLORS.GREY.A7,
+        alignItems: 'center'
     },
     text: {
-        fontWeight: 'bold',
+        fontWeight: '800',
         flex: 1,
         fontSize: _scaleText(20).fontSize,
         marginLeft: _scaleText(10).fontSize,
