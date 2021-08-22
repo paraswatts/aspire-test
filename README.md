@@ -8,7 +8,7 @@ A small demo to demonstrate debit card limit functionality
 
 ```
 npm install -g react-native-cli
-cd react-native-quick-sample
+cd aspire
 npm install
 react-native run-android
 ```
@@ -17,7 +17,7 @@ react-native run-android
 
 ```
 npm install -g react-native-cli
-cd react-native-quick-sample
+cd aspire
 npm install
 react-native run-ios
 ```
