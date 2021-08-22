@@ -1,0 +1,18 @@
+{
+    "status": 200,
+    "data": {
+        "_id": "ef97ad6d-cba4-4ae3-82fe-e97600c4a9c0",
+        "_name": "Paras Watts",
+        "_cardDetails": {
+            "_number": "4242 1234 5678 9870",
+            "_expiry": "02/26",
+            "_cvv": "347"
+        },
+        "_account": {
+            "_balance": 3000,
+            "_weekly_limit": false,
+            "_weekly_limit_amount": 5000,
+            "_money_spent": 345
+        }
+    }
+}
